@@ -27,8 +27,12 @@ nav a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   .root-container {
     width: 90%;
+  }
+  .navbar {
+    padding: 0;
+    margin-bottom: 5px;
   }
 }
