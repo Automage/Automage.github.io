@@ -5,19 +5,28 @@ clean() {
 	echo "Emptied writings/ directory"
 }
 
-build() {
-	echo "Building..."
-	echo "Generating writings..."
-	python3 scripts/gen_writings.py
+push_remote() {
 	echo "Pushing to remote..."
 	git add .
 	git commit -m "Build at $(date)"
 	git push
-	echo "Done."
+}
+
+build() {
+	echo "Building..."
+	echo "Generating writings..."
+	python3 scripts/gen_writings.py
 }
 
 if [ "$1" == "clean" ]; then
 	clean
-else
+elif [ "$1" == "nopush" ]; then
+	clean
 	build
+	echo "Done."
+else
+	clean
+	build
+	push_remote
+	echo "Done."
 fi

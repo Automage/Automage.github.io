@@ -63,6 +63,15 @@ nav a {
 .work-li {
   margin-bottom: 10;
 }
+
+#date {
+  margin-top: -2px;
+}
+
+#title {
+  margin-top: 15px;
+}
+
 /* 
 @media (max-width: 900px) {
   .root-container {

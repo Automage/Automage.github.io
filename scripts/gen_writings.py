@@ -80,8 +80,9 @@ def gen_blog_html(files):
         li = soup.new_tag("li")
         a = soup.new_tag("a", href=f"{OUT_PATH}{i}.html")
         date = format_time(file[1])
-        a.string = f"{file[2]} | Date created: {date}"
+        a.string = file[2]
         li.append(a)
+        li.append(f" | Date created: {date}")
         ul.append(li)
         i = i - 1
 
