@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 
 SRC_PATH = "../blog-src/"
 OUT_PATH = "../writings/"
+ROOT_OUT_PATH = "writings/"
+BLOG_OUT_PATH = "../writings.html"
 TEMPLATE_PATH = "../templates/"
 
 
@@ -18,7 +20,7 @@ def scan_src_dir(dirpath):
         # Read in content
         with open(path, "r") as file:
             title = file.readline()
-            content = title + file.read()
+            content = file.read()
 
         # Insert tuple
         files.append((path, ctime, title, content))
@@ -29,7 +31,7 @@ def scan_src_dir(dirpath):
     return files
 
 
-def gen_html(file):
+def gen_post_html(file):
     # Open post template
     with open(TEMPLATE_PATH + "post-template.html") as fp:
         soup = BeautifulSoup(fp, "html.parser")
@@ -55,9 +57,26 @@ def gen_html(file):
     return soup.prettify()
 
 
-# Open writings template
-with open(TEMPLATE_PATH + "writings-template.html") as fp:
-    soup = BeautifulSoup(fp, "html.parser")
+def gen_blog_html(files):
+    # Open writings template
+    with open(TEMPLATE_PATH + "writings-template.html") as fp:
+        soup = BeautifulSoup(fp, "html.parser")
+
+    # Generate table of contents of all posts
+    posts = soup.find(id="posts")
+    ul = soup.new_tag("ul")
+    i = len(files)
+    for file in files:
+        li = soup.new_tag("li")
+        a = soup.new_tag("a", href=f"{ROOT_OUT_PATH}{i}.html")
+        a.string = f"{file[2]} | Date created: {file[1]}"
+        li.append(a)
+        ul.append(li)
+        i = i - 1
+
+    posts.append(ul)
+    return soup.prettify()
+
 
 # Scan src directory for .txt blog entries
 files = scan_src_dir(SRC_PATH)
@@ -65,8 +84,13 @@ files = scan_src_dir(SRC_PATH)
 # Loop through files and generate html for each
 i = len(files)
 for file in files:
-    html = gen_html(file)
+    html = gen_post_html(file)
     with open(f"{OUT_PATH}{i}.html", 'w') as out_file:
         out_file.write(html)
 
     i = i - 1
+
+# Generate writings.html
+html = gen_blog_html(files)
+with open(BLOG_OUT_PATH, "w") as out_file:
+    out_file.write(html)
