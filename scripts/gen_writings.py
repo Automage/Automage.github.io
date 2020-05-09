@@ -1,12 +1,16 @@
+#
+# Script to generate html entries from blog-src/ txt files.
+# To be called ONLY by build.sh
+#
+
 import os
 import datetime
 from bs4 import BeautifulSoup
 
-SRC_PATH = "../blog-src/"
-OUT_PATH = "../writings/"
-ROOT_OUT_PATH = "writings/"
-BLOG_OUT_PATH = "../writings.html"
-TEMPLATE_PATH = "../templates/"
+SRC_PATH = "blog-src/"
+OUT_PATH = "writings/"
+BLOG_OUT_PATH = "writings.html"
+TEMPLATE_PATH = "templates/"
 
 
 def format_time(ts):
@@ -74,7 +78,7 @@ def gen_blog_html(files):
     i = len(files)
     for file in files:
         li = soup.new_tag("li")
-        a = soup.new_tag("a", href=f"{ROOT_OUT_PATH}{i}.html")
+        a = soup.new_tag("a", href=f"{OUT_PATH}{i}.html")
         date = format_time(file[1])
         a.string = f"{file[2]} | Date created: {date}"
         li.append(a)
