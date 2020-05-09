@@ -12,6 +12,11 @@ p {
   width: 70%;
 }
 
+.post-container {
+  width: 70%;
+  padding-top: 15px;
+}
+
 nav a {
   color: #000000;
 }
@@ -64,12 +69,8 @@ nav a {
   margin-bottom: 10;
 }
 
-#date {
-  margin-top: -2px;
-}
-
 #title {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /* 

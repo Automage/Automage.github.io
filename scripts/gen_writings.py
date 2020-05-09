@@ -82,7 +82,7 @@ def gen_blog_html(files):
         date = format_time(file[1])
         a.string = file[2]
         li.append(a)
-        li.append(f" | Date created: {date}")
+        li.append(f" | Date modifed: {date}")
         ul.append(li)
         i = i - 1
 
