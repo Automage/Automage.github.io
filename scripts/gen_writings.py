@@ -1,4 +1,5 @@
 import os
+import datetime
 from bs4 import BeautifulSoup
 
 SRC_PATH = "../blog-src/"
@@ -6,6 +7,11 @@ OUT_PATH = "../writings/"
 ROOT_OUT_PATH = "writings/"
 BLOG_OUT_PATH = "../writings.html"
 TEMPLATE_PATH = "../templates/"
+
+
+def format_time(ts):
+    st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+    return st
 
 
 def scan_src_dir(dirpath):
@@ -27,7 +33,6 @@ def scan_src_dir(dirpath):
 
     # Sort by creation date (ctime). Reversed to order newest file first.
     files.sort(key=lambda tup: tup[1], reverse=True)
-    print(files)
     return files
 
 
@@ -45,7 +50,8 @@ def gen_post_html(file):
 
     # Set date
     date = soup.find(id="date")
-    date.string = f"{file[1]}"
+    time = format_time(file[1])
+    date.string = f"{time}"
 
     # Convert lines to <p> components and add to html
     body = soup.find(id="content")
@@ -69,7 +75,8 @@ def gen_blog_html(files):
     for file in files:
         li = soup.new_tag("li")
         a = soup.new_tag("a", href=f"{ROOT_OUT_PATH}{i}.html")
-        a.string = f"{file[2]} | Date created: {file[1]}"
+        date = format_time(file[1])
+        a.string = f"{file[2]} | Date created: {date}"
         li.append(a)
         ul.append(li)
         i = i - 1
