@@ -84,6 +84,11 @@ nav a {
   .root-container {
     width: 90%;
   }
+
+  .post-container {
+    width: 90%;
+  }
+
   .navbar {
     padding: 0;
     margin-bottom: 5px;
