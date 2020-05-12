@@ -63,7 +63,8 @@ def gen_post_html(file):
         p = soup.new_tag("p")
         p.string = line
         body.append(p)
-
+    
+    print(soup.prettify(formatter=None))
     return soup.prettify(formatter=None)
 
 

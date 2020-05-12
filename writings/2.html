@@ -21,7 +21,7 @@
    </h1>
    <i>
     <p class="text-muted" id="date">
-     2020-05-12 17:07:46
+     2020-05-12 17:21:55
     </p>
    </i>
    <div id="content">
@@ -46,7 +46,7 @@
      Rather than making a separate post, I thought I'd briefly explain how my custom build process works for this blog (I should be able to show off to myself, right?).
     </p>
     <p>
-     As of writing this post, the site is statically hosted by GitHub Pages. While I eventually want to dynamically host this site (to play around with custom web servers, self-hosting and other nifty things), I did want to get my blog up and running. One thing was certain – I did not want to be editing raw HTML files to upload my posts. The process had to be more accessible and streamlined. My (likely temporary) solution was to convert plain text files into pre-formatted HTML files by programmatically editing templates. Text files are accessible enough to be written wherever I am (mobile, laptop, etc.) and this approach allows me to have just a single build script to run. The python script can be found <a href="scripts/gen_writings.py">here</a>. It uses BeautifulSoup4 to edit the template with the content in the text files (as well extracting other things like the date last modified), eventually generating a HTML file like the one you're reading now!
+     As of writing this post, the site is statically hosted by GitHub Pages. While I eventually want to dynamically host this site (to play around with custom web servers, self-hosting and other nifty things), I did want to get my blog up and running. One thing was certain – I did not want to be editing raw HTML files to upload my posts. The process had to be more accessible and streamlined. My (likely temporary) solution was to convert plain text files into pre-formatted HTML files by programmatically editing templates. Text files are accessible enough to be written wherever I am (mobile, laptop, etc.) and this approach allows me to have just a single build script to run. The python script can be found <a href="../scripts/gen_writings.py">here</a>. It uses BeautifulSoup4 to edit the template with the content in the text files (as well extracting other things like the date last modified), eventually generating a HTML file like the one you're reading now!
     </p>
     <p>
     </p>
