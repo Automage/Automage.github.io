@@ -64,7 +64,7 @@ def gen_post_html(file):
         p.string = line
         body.append(p)
 
-    return soup.prettify(formatter=None)
+    return soup.prettify(formatter='html')
 
 
 def gen_blog_html(files):
