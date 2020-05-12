@@ -1,7 +1,7 @@
 Building a 'blog'
 
 I've been meaning to start a writing page for a long time now, but never got to it because I've been obsessing over the format, how it'll be deployed, etc. Given the strange times we're living in right now, I suppose there's no better time to get started.
-<i>Why are you blogging? Who are you targeting?</i>
+\<i\>Why are you blogging? Who are you targeting?\</i\>
 I'm not quite sure myself. This project is largely for, and addressed to, myself – a place to compose/consolidate any knowledge that I hope to never forget, amongst other miscellaneous things that I'll realize on the way. A museum of my mind and its evolution over the years? Let's go with that for now. I don't foresee this being a periodical thing, expect no temporal trends.
 A question that arises is why put this is online, visible to the public eye? I don't expect this site will ever be in any sort of limelight, and I'd like to keep it that way. That being said, it should be accessible enough that anyone looking specifically for me should be able to stumble upon this 'blog'. The idea of someone going down an internet rabbit hole and ending up here, of all places, entertains me. If you fit that criteria, I'm glad I put this up online :).
 <hr>
