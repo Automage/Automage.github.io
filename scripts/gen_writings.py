@@ -64,7 +64,7 @@ def gen_post_html(file):
         p.string = line
         body.append(p)
 
-    return soup.prettify()
+    return soup.prettify(formatter=None)
 
 
 def gen_blog_html(files):
@@ -87,7 +87,7 @@ def gen_blog_html(files):
         i = i - 1
 
     posts.append(ul)
-    return soup.prettify(formatter=None)
+    return soup.prettify()
 
 
 # Scan src directory for .txt blog entries
