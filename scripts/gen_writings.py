@@ -64,7 +64,6 @@ def gen_post_html(file):
         p.string = line
         body.append(p)
     
-    print(soup.prettify(formatter=None))
     return soup.prettify(formatter=None)
 
 
