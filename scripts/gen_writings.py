@@ -7,8 +7,8 @@ import os
 import datetime
 from bs4 import BeautifulSoup
 
-SRC_PATH = "blog-src/"
-OUT_PATH = "writings/"
+SRC_PATH = "writing-src/"
+OUT_PATH = "writing/"
 BLOG_OUT_PATH = "writings.html"
 TEMPLATE_PATH = "templates/"
 

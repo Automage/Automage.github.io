@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clean() {
-	rm writings/*
+	rm writing/*
 	echo "Emptied writings/ directory"
 }
 
