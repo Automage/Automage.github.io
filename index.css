@@ -52,7 +52,7 @@ nav a {
 }
 
 .social-links-inner {
-  display: inline;
+  display: inline-block;
 }
 
 .link-icon {
@@ -73,6 +73,14 @@ nav a {
   margin-top: 10px;
 }
 
+#prof-pic {
+  float: left;
+  margin: 0px;
+  margin-right: 20px;
+  width: 250px;
+  height: 328px;
+}
+
 /* 
 @media (max-width: 900px) {
   .root-container {
@@ -81,6 +89,14 @@ nav a {
 } */
 
 @media (max-width: 768px) {
+  #prof-pic {
+    float: left;
+    margin: 0px;
+    margin-right: 20px;
+    width: 200px;
+    height: 262px;
+  }
+
   .root-container {
     width: 90%;
   }
@@ -92,5 +108,24 @@ nav a {
   .navbar {
     padding: 0;
     margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 535px) {
+  #prof-pic {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 262px;
+  }
+
+  .img-container {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  #bio {
+    display: inline-block;
+    margin-top: 10px;
   }
 }
