@@ -1,131 +1,89 @@
+/* CSS based on Mark McGranaghan's website https://markmcgranaghan.com */
+
+/* Fonts */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/NotoSerif-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/NotoSerif-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/NotoSerif-Italic.ttf) format('truetype');
+}
+
 body {
-  margin-top: 25;
-  /* background: #000; */
-  /* color: cadetblue;  */
+    background-color: #e0d6bf;
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
+hr {
+  border-top: 1px solid #865634;
 }
 
-.root-container {
-  width: 70%;
-}
-
-.post-container {
-  width: 70%;
-  padding-top: 15px;
-}
-
-nav a {
-  color: #000000;
-}
-
-.navbar {
-  padding: 0;
-}
-
-.navbar-brand:hover {
-  color: black;
-}
-
-.nav-link {
-  color: gray;
-}
-
-.nav-link:hover {
-  color: black;
-}
-
-.active {
-  color: black;
-  font-weight: 500;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  margin-bottom: 5px;
-}
-
-.social-links {
-  text-align: center;
-}
-
-.social-links-inner {
-  display: inline-block;
-}
-
-.link-icon {
-  color: black;
-  margin-right: 5;
-  margin-bottom: 5;
-}
-
-.work-title {
-  margin-bottom: 0;
-}
-
-.work-li {
-  margin-bottom: 10;
-}
-
-#title {
-  margin-top: 10px;
-}
-
-#prof-pic {
-  float: left;
-  margin: 0px;
-  margin-right: 20px;
-  width: 250px;
-  height: 328px;
-}
-
-/* 
-@media (max-width: 900px) {
-  .root-container {
-    width: 70%;
-  }
-} */
-
-@media (max-width: 768px) {
-  #prof-pic {
-    float: left;
-    margin: 0px;
-    margin-right: 20px;
-    width: 200px;
-    height: 262px;
-  }
-
-  .root-container {
+@media only screen and (max-width: 680px) {
+  div#content {
     width: 90%;
-  }
-
-  .post-container {
-    width: 90%;
-  }
-
-  .navbar {
-    padding: 0;
-    margin-bottom: 5px;
+    padding: 0 5%;
+    font-size: 90%;
   }
 }
 
-@media (max-width: 535px) {
-  #prof-pic {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    height: 262px;
-  }
+#content {
+  width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  margin-bottom: 14em;
+}
 
-  .img-container {
-    margin: 0 auto;
-    width: fit-content;
-  }
+a:visited, a:link {
+  color:#8b4513;
+}
 
-  #bio {
-    display: inline-block;
-    margin-top: 20px;
-  }
+.link-list {
+  line-height: 200%;
+}
+
+.page-title {
+  margin-top: 1.5em;
+}
+
+.exp {
+  margin-top: 2em;
+}
+
+.exp-date {
+  font-style: italic;
+  color: #865634;
+  font-size: 90%;
+}
+
+.exp-title {
+  margin-top: -0.4em;
+  font-weight: bold;
+  font-size: large;
+}
+
+.exp-role {
+  margin-top: -1em;
+  color: #865634;
+}
+
+.exp-body {
+  margin-top: -0.5em;
+}
+
+.exp-body-item {
+  margin-left: -1em;
 }

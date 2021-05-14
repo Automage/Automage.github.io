@@ -1,229 +1,93 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166251944-1"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-166251944-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  		gtag('config', 'UA-166251944-1');
-	</script>
-
-	<meta charset="utf-8" />
+      gtag("config", "UA-166251944-1");
+    </script>
+    <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <link rel="stylesheet" href="index.css" />
-    <title>Pranav's Portal: Experience</title>
+
+    <title>Experience</title>
   </head>
   <body>
-    <div class="container root-container">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="#"
-          ><h1>
-            Pranav Nair
-          </h1>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#myNavbar"
-          aria-controls="myNavbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div id='content'>
+      <a href="index.html"><< Home</a>
+      <h2 class="page-title">Experience</h2>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="navbar-nav ml-auto flex-nowrap">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="experience.html" class="nav-link active">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a href="projects.html" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="misc.html" class="nav-link">Misc.</a>
-            </li>
-            <li class="nav-item">
-              <a href="writing.html" class="nav-link">Writing</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <p>My résumé can be found <a href="https://drive.google.com/file/d/1zqjd_nmG5PAJ4r7YB4sf9EWoC15bJksF/view">here</a>.</p>
 
-      <!-- Main content -->
-
-      <!-- Contact me -->
-      <p>
-        My resume is available
-        <a
-          href="https://drive.google.com/file/d/1zqjd_nmG5PAJ4r7YB4sf9EWoC15bJksF/view?usp=sharing"
-          rel="noopener noreferrer"
-          target="_blank"
-          >here</a
-        >.<br />
-        Email: pranav <i>at</i> purdue <i>dot</i> edu
-      </p>
-
-      <!-- Social links -->
-      <div class="social-links">
-        <div class="social-links-inner">
-          <a
-            href="https://www.linkedin.com/in/pranavnair311/"
-            rel="noopener noreferrer"
-            target="_blank"
-            ><i class="fa fa-linkedin fa-2x link-icon"></i
-          ></a>
-          <a
-            href="https://github.com/Automage"
-            rel="noopener noreferrer"
-            target="_blank"
-            ><i class="fa fa-github fa-2x link-icon"></i
-          ></a>
-        </div>
+      <div id="exp-apple" class="exp">
+        <p class="exp-date">Cupertino, CA &nbsp;•&nbsp; May 2021 – Current</p>
+        <p class="exp-title">Apple Inc.</p>
+        <p class="exp-role">Software Engineering Intern</p>
+        <ul class="exp-body">
+          <li class="exp-body-item">Will be working at the CoreOS team!</li>
+        </ul>
       </div>
-      <hr />
 
-      <!-- Work experience -->
-      <h4>Work Experience</h4>
-      <ul>
-        <li class="work-li">
-          <div>
-            <h5 class="work-title">Envision Center, Purdue University</h5>
-            <p class="work-title">
-              <i>Student Simulation Programmer | Feb 2020 – Present</i>
-            </p>
-            <ul>
-              <li>
-                Member of the Unity3D programming team, who take on VR/AR
-                simulation requests from clients through the Envision Center.
-              </li>
-              <li>
-                Currently developing a Oculus Rift VR construction safety
-                simulation for an undisclosed client with a team of Unity3D
-                programmers and 3D artists. The project utilizes a custom Unity
-                event manager, inspired from my work during my previous
-                internship at TechMahindra.
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="work-li">
-          <div>
-            <h5 class="work-title">Maker's Lab, Tech Mahindra</h5>
-            <p class="work-title">
-              <i>AR/VR Intern | June 2019 – July 2019</i>
-            </p>
-            <ul>
-              <li>
-                Worked on Storyteller, a program that dynamically generates an
-                animated story based on events that are spoken by the user.
-              </li>
-              <li>
-                Led the Unity backend, completely redesigning the approach using
-                a custom event system, as well as implementing several features
-                such as runtime NavMesh baking, scenic camera tracking and
-                animation handling.
-              </li>
-              <li>
-                Presented the project to an audience of 40 people, including all
-                of the Maker’s Lab's directors.
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <hr />
+      <div id="exp-rssl" class="exp">
+        <p class="exp-date">West Lafayette, IN &nbsp;•&nbsp; Jun 2020 – Dec 2020</p>
+        <p class="exp-title">Reliable and Secure Systems Lab, Purdue University</p>
+        <p class="exp-role">Systems Research Intern</p>
+        <ul class="exp-body">
+          <li class="exp-body-item">
+            Conducting research on greybox kernel fuzzing, particularly contributing to Snowboard, an automated kernel concurrency test 
+            generator, and SKI (OSDI ’14), an interleaving explorer for detecting concurrency bugs in the kernel.
+          </li>
+          <li class="exp-body-item">Modified the Linux kernel to provide memory access coverage data (via KASAN instrumentation) through a custom module.</li>
+          <li class="exp-body-item">Contributing to Google’s Syzkaller by modifying the code coverage algorithm to include memory coverage information.</li>
+          <li class="exp-body-item">Advised by Prof. Pedro Fonseca.</li>
+        </ul>
+      </div>
 
-      <!-- Teaching -->
-      <h4>Teaching</h4>
-      <ul>
-        <li class="work-li">
-          <div>
-            <h5 class="work-title">
-              Department of Computer Science, Purdue University
-            </h5>
-            <p class="work-title">
-              <i>CS180 & CS240 Teaching Assistant | Aug 2019 – Present</i>
-            </p>
-            <ul>
-              <li>
-                Introducing students to Java and C programming by assisting
-                CS180 (Object Oriented Programming) and CS240 (C Programming)
-                labs.
-              </li>
-              <li>
-                Contributor to online Piazza sessions, answering and advising
-                students regarding programming projects and concepts.
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <hr />
+      <div id="exp-envision" class="exp">
+        <p class="exp-date">West Lafayette, IN &nbsp;•&nbsp; Feb 2020 – Jul 2020</p>
+        <p class="exp-title">Envision Center, Purdue University</p>
+        <p class="exp-role">Simulation Programmer</p>
+        <ul class="exp-body">
+          <li class="exp-body-item">Currently developing an Oculus Rift VR construction safety simulation with a team of Unity3D programmers and 3D artists.</li>
+          <li class="exp-body-item">Experience working in a collaborative codebase and environment of 5+ programmers, ensuring a high standard of
+            documentation and version control practices.</li>
+        </ul>
+      </div>
 
-      <!-- Courses -->
-      <h4>Courses Taken</h4>
-      <p>
-        <b>Computer Science:</b><br />
-        CS390CPI: Competitive Programming I<br />
-        CS390WAP: Web Application Development<br />
-        CS381: Analysis of Algorithms<br />
-        CS252: Systems Programming<br />
-        CS251: Data Structures and Algorithms<br />
-        CS250: Computer Architecture<br />
-        CS240: Programming in C<br />
-        CS182: Foundations of Computer Science<br />
-        CS180: Object Oriented Programming<br />
-      </p>
-      <p>
-        <b>Mathematics and Statistics:</b><br />
-        MA341: Foundations Analysis<br />
-        MA351: Linear Algebra<br />
-        MA261: Multivariate Calculus<br />
-        STAT350: Introduction to Statistics and R Programming<br />
-      </p>
-      <p>
-        <b>Other:</b><br />
-        PHIL110: Introduction to Philosophy<br />
-        SOC100: Introduction to Sociology<br />
-      </p>
+      <div id="exp-ta" class="exp">
+        <p class="exp-date">West Lafayette, IN &nbsp;•&nbsp; Aug 2019 – May 2020</p>
+        <p class="exp-title">Department of Computer Science, Purdue University</p>
+        <p class="exp-role">Undergraduate Teaching Assistant</p>
+        <ul class="exp-body">
+          <li class="exp-body-item">Introduced students to programming fundamentals by assisting CS180 (Object Oriented Programming) and CS240 
+            (C Programming) labs.</li>
+          <li class="exp-body-item">Contributed to online Piazza forums, advising students on programming projects and concepts.</li>
+        </ul>
+      </div>
+
+      <div id="exp-techm" class="exp">
+        <p class="exp-date">Pune, India &nbsp;•&nbsp; Jun 2019 – Jul 2019</p>
+        <p class="exp-title">Maker's Lab, Tech Mahindra</p>
+        <p class="exp-role">AR/VR Intern</p>
+        <ul class="exp-body">
+          <li class="exp-body-item">Contributed to Storyteller, a program that dynamically generates an animated story based on events spoken by the user.</li>
+          <li class="exp-body-item">Led the Unity backend, completely redesigning the approach using a custom event system, as well as implementing several
+            features such as runtime NavMesh baking, scenic camera tracking and animation handling.</li>
+        </ul>
+      </div>
+
     </div>
-
-    <!-- Scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
